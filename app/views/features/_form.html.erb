@@ -3,7 +3,7 @@
 	<%= f.text_field :name %>
 	
 	<%= f.label :language_id, 'Language' %>
-	<%= f.collection_select :language_id, Language.all, :id, :name, {:prompt => true} %>
+	<%= collection_select :feature, :language_id, Language.all, :id, :name, {:prompt => true} %>
 	
 	<%= f.label :info %>
 	<%= f.text_area :info %>
