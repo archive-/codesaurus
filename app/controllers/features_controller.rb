@@ -20,7 +20,11 @@ class FeaturesController < ApplicationController
   end
 
   def index
-    @features = Feature.all
+    if !params[:q].blank?
+      @features = Feature.where('features.name LIKE ?', "%#{params[:q]}%")
+    else
+      @features = Feature.all
+    end  
   end
 
   def edit

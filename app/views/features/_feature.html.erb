@@ -1,6 +1,6 @@
 <div class="feature">
 	<h2><%= link_to feature.name, feature %> (<%= link_to 'edit', edit_feature_path(feature) %>)</h2>
-	<pre class="feature-info"><%= feature.info %></pre>
+	<pre class="feature-info"><%= truncate(feature.info, :length => 30, :omission => "... (#{(link_to 'more', feature)})") %></pre>
 	<pre class="feature-snippet prettyprint linenums"><%= feature.snippet %></pre>
 	<p><%= link_to feature.url, feature.url %></p>
 </div>

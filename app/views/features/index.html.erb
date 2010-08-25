@@ -1,5 +1,9 @@
-<h2>Listing features</h2>
+<h2>Listing language features</h2>
 
+<% if @features.size > 0 %>
 <% @features.each do |feature| %>
 	<%= render feature %>
+<% end %>
+<% else %>
+	<p>No <strong>feature names</strong> found with search query of '<%= params[:q] %>'.</p>
 <% end %>
