@@ -7,3 +7,4 @@ textarea {height: 100px;}
 pre {white-space: pre-wrap; white-space: -moz-pre-wrap !important; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;}
 .feature-info {font-family: 'arial'; font-size: 14px; line-height: 1.2;}
 #q {width: 200px;}
+.inline {display: inline;}

@@ -2,7 +2,7 @@
 	<%= f.label :name %>
 	<%= f.text_field :name %>
 	
-	<%= f.label :language_id, 'Language' %>
+	<%= f.label :language_id, 'Language', {:class => 'inline'} %>
 	<%= collection_select :feature, :language_id, Language.all, :id, :name, {:prompt => true} %>
 	
 	<%= f.label :info %>
