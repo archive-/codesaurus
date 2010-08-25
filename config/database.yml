@@ -9,7 +9,7 @@ development:
   password: root
   host: localhost
 
-test:
+test: 
   adapter: mysql
   encoding: utf8
   reconnect: false
