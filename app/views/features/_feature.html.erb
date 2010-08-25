@@ -2,5 +2,6 @@
 	<h2><b>[<%= feature.language.name %>]</b> <%= link_to feature.name, feature %> (<%= link_to 'edit', edit_feature_path(feature) %>)</h2>
 	<pre class="feature-info"><%= raw(truncate(feature.info.gsub(/\r\n/, ' '), 280, "... ("+(link_to 'read more', feature)+")")) %></pre>
 	<pre class="feature-snippet prettyprint linenums"><%= feature.snippet %></pre>
+	<p>Edited <%= pluralize(feature.versions.size, 'time') %> [history, soon].</p>
 	<p><%= link_to feature.url, feature.url %></p>
 </div>

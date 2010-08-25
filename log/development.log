@@ -23130,3 +23130,674 @@ ActionController::RoutingError (No route matches "/javascripts/modernizer-1.5"):
   /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
 
 Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/features/2" for 127.0.0.1 at 2010-08-24 23:46:50 -0700
+  Processing by FeaturesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mFeature Load (0.4ms)[0m  SELECT `features`.* FROM `features` WHERE (`features`.`id` = 2) LIMIT 1
+  [1m[36mLanguage Load (0.7ms)[0m  [1mSELECT `languages`.* FROM `languages` WHERE (`languages`.`id` = 3) LIMIT 1[0m
+Rendered features/show.html.erb within layouts/application (40.2ms)
+Completed 200 OK in 114ms (Views: 44.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/javascripts/modernizer-1.5" for 127.0.0.1 at 2010-08-24 23:46:51 -0700
+
+ActionController::RoutingError (No route matches "/javascripts/modernizer-1.5"):
+/Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/features/2/edit" for 127.0.0.1 at 2010-08-24 23:56:38 -0700
+  Processing by FeaturesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mFeature Load (0.6ms)[0m  SELECT `features`.* FROM `features` WHERE (`features`.`id` = 2) LIMIT 1
+  [1m[36mLanguage Load (0.3ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+Rendered features/_form.html.erb (29.9ms)
+Rendered features/edit.html.erb within layouts/application (44.7ms)
+Completed 200 OK in 109ms (Views: 47.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/javascripts/modernizer-1.5" for 127.0.0.1 at 2010-08-24 23:56:38 -0700
+
+ActionController::RoutingError (No route matches "/javascripts/modernizer-1.5"):
+/Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/features/2/edit" for 127.0.0.1 at 2010-08-24 23:58:24 -0700
+  Processing by FeaturesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mFeature Load (0.7ms)[0m  SELECT `features`.* FROM `features` WHERE (`features`.`id` = 2) LIMIT 1
+  [1m[36mLanguage Load (0.3ms)[0m  [1mSELECT `languages`.* FROM `languages`[0m
+Rendered features/_form.html.erb (29.0ms)
+Rendered features/edit.html.erb within layouts/application (94.3ms)
+Completed 200 OK in 167ms (Views: 98.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/javascripts/modernizer-1.5" for 127.0.0.1 at 2010-08-24 23:58:24 -0700
+
+ActionController::RoutingError (No route matches "/javascripts/modernizer-1.5"):
+/Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-24 23:58:35 -0700
+  Processing by FeaturesController#index as HTML
+  [1m[35mFeature Load (0.4ms)[0m  SELECT `features`.* FROM `features`
+  [1m[36mLanguage Load (1.8ms)[0m  [1mSELECT `languages`.* FROM `languages` WHERE (`languages`.`id` = 4) LIMIT 1[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _render_template_1514079343776591281_2179032680__247709493392006060 at /Users/tjk/Desktop/codesaurus/app/views/features/_feature.html.erb:3)
+Rendered features/_feature.html.erb (24.4ms)
+  [1m[35mLanguage Load (2.6ms)[0m  SELECT `languages`.* FROM `languages` WHERE (`languages`.`id` = 3) LIMIT 1
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _render_template_1514079343776591281_2178049400__247709493392006060 at /Users/tjk/Desktop/codesaurus/app/views/features/_feature.html.erb:3)
+Rendered features/_feature.html.erb (6.7ms)
+Rendered features/index.html.erb within layouts/application (99.4ms)
+Completed 200 OK in 112ms (Views: 98.0ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/javascripts/modernizer-1.5" for 127.0.0.1 at 2010-08-24 23:58:35 -0700
+
+ActionController::RoutingError (No route matches "/javascripts/modernizer-1.5"):
+/Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateFeatures (20100825015353)
+Migrating to CreateLanguages (20100825061239)
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (9.0ms)[0m  [1mdescribe `features`[0m
+  [1m[35mSQL (1.9ms)[0m  SHOW KEYS FROM `features`
+  [1m[36mSQL (3.5ms)[0m  [1mdescribe `languages`[0m
+  [1m[35mSQL (1.9ms)[0m  SHOW KEYS FROM `languages`
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateFeatures (20100825015353)
+Migrating to CreateLanguages (20100825061239)
+Migrating to CreateVersions (20100825070940)
+  [1m[35mSQL (115.6ms)[0m  CREATE TABLE `versions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `item_type` varchar(255) NOT NULL, `item_id` int(11) NOT NULL, `event` varchar(255) NOT NULL, `whodunnit` varchar(255), `object` text, `created_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW KEYS FROM `versions`[0m
+  [1m[35mSQL (195.2ms)[0m  CREATE INDEX `index_versions_on_item_type_and_item_id` ON `versions` (`item_type`, `item_id`)
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `schema_migrations`[0m
+  [1m[35mSQL (2.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20100825070940')
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (2.1ms)[0m  describe `features`
+  [1m[36mSQL (1.9ms)[0m  [1mSHOW KEYS FROM `features`[0m
+  [1m[35mSQL (2.1ms)[0m  describe `languages`
+  [1m[36mSQL (3.6ms)[0m  [1mSHOW KEYS FROM `languages`[0m
+  [1m[35mSQL (3.1ms)[0m  describe `versions`
+  [1m[36mSQL (1.2ms)[0m  [1mSHOW KEYS FROM `versions`[0m
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-25 00:10:33 -0700
+  Processing by FeaturesController#index as HTML
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+Completed   in 60ms
+
+NameError (undefined local variable or method `has_paper_trail' for #<Class:0x00000101f0bdb8>):
+/Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activerecord-3.0.0.beta4/lib/active_record/base.rb:1041:in `method_missing'
+  /Users/tjk/Desktop/codesaurus/app/models/feature.rb:3:in `<class:Feature>'
+  /Users/tjk/Desktop/codesaurus/app/models/feature.rb:1:in `<top (required)>'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:418:in `load'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:418:in `block in load_file'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:554:in `new_constants_in'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:417:in `load_file'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:313:in `require_or_load'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:455:in `load_missing_constant'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:156:in `block in const_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `each'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `const_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:467:in `load_missing_constant'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:156:in `block in const_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `each'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `const_missing'
+  /Users/tjk/Desktop/codesaurus/app/controllers/features_controller.rb:25:in `index'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/abstract_controller/base.rb:145:in `process_action'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rendering.rb:11:in `process_action'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:433:in `_run__3762751430978877940__process_action__1229262961641409651__callbacks'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:408:in `_run_process_action_callbacks'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:88:in `run_callbacks'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/abstract_controller/callbacks.rb:17:in `process_action'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:29:in `block in process_action'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/notifications.rb:48:in `instrument'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:28:in `process_action'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rescue.rb:8:in `process_action'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/abstract_controller/base.rb:114:in `process'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:40:in `process'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal.rb:126:in `dispatch'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal.rb:166:in `block in action'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:27:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:27:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-mount-0.6.12/lib/rack/mount/route_set.rb:148:in `block in call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-mount-0.6.12/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-mount-0.6.12/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-mount-0.6.12/lib/rack/mount/code_generation.rb:92:in `recognize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-mount-0.6.12/lib/rack/mount/route_set.rb:139:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:457:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/head.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/flash.rb:177:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/session/abstract_store.rb:106:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/cookies.rb:235:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:31:in `block in call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:11:in `cache'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_pool.rb:365:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:414:in `_run_call_callbacks'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:88:in `run_callbacks'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/sendfile.rb:105:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:48:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-25 00:10:45 -0700
+  Processing by FeaturesController#index as HTML
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mFeature Load (0.3ms)[0m  SELECT `features`.* FROM `features`
+  [1m[36mLanguage Load (0.3ms)[0m  [1mSELECT `languages`.* FROM `languages` WHERE (`languages`.`id` = 4) LIMIT 1[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _render_template_441893632574534093_2153790920_1480196531949173473 at /Users/tjk/Desktop/codesaurus/app/views/features/_feature.html.erb:3)
+Rendered features/_feature.html.erb (89.1ms)
+  [1m[35mLanguage Load (0.8ms)[0m  SELECT `languages`.* FROM `languages` WHERE (`languages`.`id` = 3) LIMIT 1
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _render_template_441893632574534093_2163224300_1480196531949173473 at /Users/tjk/Desktop/codesaurus/app/views/features/_feature.html.erb:3)
+Rendered features/_feature.html.erb (4.6ms)
+Rendered features/index.html.erb within layouts/application (155.2ms)
+Completed 200 OK in 255ms (Views: 157.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/javascripts/modernizer-1.5" for 127.0.0.1 at 2010-08-25 00:10:46 -0700
+
+ActionController::RoutingError (No route matches "/javascripts/modernizer-1.5"):
+/Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/features/1/edit" for 127.0.0.1 at 2010-08-25 00:10:51 -0700
+  Processing by FeaturesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFeature Load (0.4ms)[0m  [1mSELECT `features`.* FROM `features` WHERE (`features`.`id` = 1) LIMIT 1[0m
+  [1m[35mLanguage Load (0.3ms)[0m  SELECT `languages`.* FROM `languages`
+Rendered features/_form.html.erb (30.2ms)
+Rendered features/edit.html.erb within layouts/application (85.9ms)
+Completed 200 OK in 158ms (Views: 90.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/modernizer-1.5" for 127.0.0.1 at 2010-08-25 00:10:51 -0700
+
+ActionController::RoutingError (No route matches "/javascripts/modernizer-1.5"):
+/Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started POST "/features/1" for 127.0.0.1 at 2010-08-25 00:11:07 -0700
+  Processing by FeaturesController#update as HTML
+  Parameters: {"authenticity_token"=>"dP1q3mvEQw3tAmvXYEk9HLu2xLueCckXGVdZ0mURPk4=", "feature"=>{"name"=>"ifx_prepare", "language_id"=>"4", "info"=>"Prepares a query for later use with ifx_do().\r\n\r\nFor \"select-type\" queries a cursor is declared and opened. Non-select queries are \"execute immediate\".\r\n\r\nFor either query type the number of (estimated or real) affected rows is saved for retrieval by ifx_affected_rows().\r\n\r\nIf the contents of the TEXT (or BYTE) column allow it, you can also use ifx_textasvarchar(1) and ifx_byteasvarchar(1). This allows you to treat TEXT (or BYTE) columns just as if they were ordinary (but long) VARCHAR columns for select queries, and you don't need to bother with blob id's.\r\n\r\nWith ifx_textasvarchar(0) or ifx_byteasvarchar(0) (the default situation), select queries will return BLOB columns as blob id's (integer value). You can get the value of the blob as a string or file with the blob functions (see below).", "snippet"=>"$conn = fx_connect( \"db\", \"user\", \"password\" );\r\n$result = ifx_prepare(\"SELECT customer_num, company FROM customer\", $conn);\r\nifx_do($result);\r\n\r\n// testing has paper_trails", "url"=>"http://us3.php.net/manual/en/function.ifx-prepare.php", "deprecated"=>"0"}, "commit"=>"Update Feature", "id"=>"1"}
+  [1m[36mFeature Load (2.7ms)[0m  [1mSELECT `features`.* FROM `features` WHERE (`features`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mFeature Load (0.4ms)[0m  [1mSELECT `features`.`id` FROM `features` WHERE (`features`.`name` = BINARY 'ifx_prepare') AND (`features`.`language_id` = 4) AND (`features`.id <> 1) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `features` SET `snippet` = '$conn = fx_connect( \"db\", \"user\", \"password\" );\r\n$result = ifx_prepare(\"SELECT customer_num, company FROM customer\", $conn);\r\nifx_do($result);\r\n\r\n// testing has paper_trails', `updated_at` = '2010-08-25 07:11:07' WHERE (`features`.`id` = 1)
+  [1m[36mSQL (1.7ms)[0m  [1mdescribe `versions`[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO `versions` (`created_at`, `event`, `item_id`, `item_type`, `object`, `whodunnit`) VALUES ('2010-08-25 07:11:07', 'update', 1, 'Feature', '--- \ncreated_at: 2010-08-25 06:41:47 Z\ndeprecated: false\nfv: \nid: 1\ninfo: |-\n Prepares a query for later use with ifx_do().\r\n \r\n For \"select-type\" queries a cursor is declared and opened. Non-select queries are \"execute immediate\".\r\n \r\n For either query type the number of (estimated or real) affected rows is saved for retrieval by ifx_affected_rows().\r\n \r\n If the contents of the TEXT (or BYTE) column allow it, you can also use ifx_textasvarchar(1) and ifx_byteasvarchar(1). This allows you to treat TEXT (or BYTE) columns just as if they were ordinary (but long) VARCHAR columns for select queries, and you don\'t need to bother with blob id\'s.\r\n \r\n With ifx_textasvarchar(0) or ifx_byteasvarchar(0) (the default situation), select queries will return BLOB columns as blob id\'s (integer value). You can get the value of the blob as a string or file with the blob functions (see below).\nlanguage_id: 4\nname: ifx_prepare\nsnippet: |-\n $conn = fx_connect( \"db\", \"user\", \"password\" );\r\n $result = ifx_prepare(\"SELECT customer_num, company FROM customer\", $conn);\r\n ifx_do($result);\ntv: \nupdated_at: 2010-08-25 06:41:47 Z\nurl: http://us3.php.net/manual/en/function.ifx-prepare.php\n', NULL)
+  [1m[36mSQL (6.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/features/1
+Completed 302 Found in 79ms
+
+
+Started GET "/features/1" for 127.0.0.1 at 2010-08-25 00:11:07 -0700
+  Processing by FeaturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mFeature Load (0.6ms)[0m  SELECT `features`.* FROM `features` WHERE (`features`.`id` = 1) LIMIT 1
+  [1m[36mLanguage Load (0.2ms)[0m  [1mSELECT `languages`.* FROM `languages` WHERE (`languages`.`id` = 4) LIMIT 1[0m
+Rendered features/show.html.erb within layouts/application (40.4ms)
+Completed 200 OK in 61ms (Views: 43.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/javascripts/modernizer-1.5" for 127.0.0.1 at 2010-08-25 00:11:07 -0700
+
+ActionController::RoutingError (No route matches "/javascripts/modernizer-1.5"):
+/Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/features/1" for 127.0.0.1 at 2010-08-25 00:13:30 -0700
+  Processing by FeaturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mFeature Load (0.4ms)[0m  SELECT `features`.* FROM `features` WHERE (`features`.`id` = 1) LIMIT 1
+  [1m[36mLanguage Load (0.4ms)[0m  [1mSELECT `languages`.* FROM `languages` WHERE (`languages`.`id` = 4) LIMIT 1[0m
+Rendered features/show.html.erb within layouts/application (81.1ms)
+Completed 200 OK in 147ms (Views: 84.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/javascripts/modernizer-1.5" for 127.0.0.1 at 2010-08-25 00:13:30 -0700
+
+ActionController::RoutingError (No route matches "/javascripts/modernizer-1.5"):
+/Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/features/1" for 127.0.0.1 at 2010-08-25 00:13:32 -0700
+  Processing by FeaturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mFeature Load (2.3ms)[0m  SELECT `features`.* FROM `features` WHERE (`features`.`id` = 1) LIMIT 1
+  [1m[36mLanguage Load (0.7ms)[0m  [1mSELECT `languages`.* FROM `languages` WHERE (`languages`.`id` = 4) LIMIT 1[0m
+Rendered features/show.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 117ms (Views: 40.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/javascripts/modernizer-1.5" for 127.0.0.1 at 2010-08-25 00:13:32 -0700
+
+ActionController::RoutingError (No route matches "/javascripts/modernizer-1.5"):
+/Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-25 00:13:35 -0700
+  Processing by FeaturesController#index as HTML
+  [1m[35mFeature Load (0.4ms)[0m  SELECT `features`.* FROM `features`
+  [1m[36mLanguage Load (2.5ms)[0m  [1mSELECT `languages`.* FROM `languages` WHERE (`languages`.`id` = 4) LIMIT 1[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _render_template_441893632574534093_2163155400_1480196531949173473 at /Users/tjk/Desktop/codesaurus/app/views/features/_feature.html.erb:3)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) AS count_id FROM `versions` WHERE (`versions`.item_id = 1 AND `versions`.item_type = 'Feature')
+Rendered features/_feature.html.erb (45.5ms)
+Rendered features/index.html.erb within layouts/application (114.5ms)
+Completed   in 130ms
+
+ActionView::Template::Error (undefined method `pluralize' for 1:Fixnum):
+    2: 	<h2><b>[<%= feature.language.name %>]</b> <%= link_to feature.name, feature %> (<%= link_to 'edit', edit_feature_path(feature) %>)</h2>
+    3: 	<pre class="feature-info"><%= raw(truncate(feature.info.gsub(/\r\n/, ' '), 280, "... ("+(link_to 'read more', feature)+")")) %></pre>
+    4: 	<pre class="feature-snippet prettyprint linenums"><%= feature.snippet %></pre>
+    5: 	<p>Edited <%= pluralize('time', feature.versions.size) %></p>
+    6: 	<p><%= link_to feature.url, feature.url %></p>
+    7: </div>
+/Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_view/helpers/text_helper.rb:187:in `pluralize'
+  /Users/tjk/Desktop/codesaurus/app/views/features/_feature.html.erb:5:in `_render_template_441893632574534093_2163155400_1480196531949173473'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_view/template.rb:134:in `block in render'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/notifications.rb:48:in `instrument'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_view/template.rb:126:in `render'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_view/render/partials.rb:292:in `render_partial'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_view/render/partials.rb:221:in `block in render'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/notifications.rb:48:in `instrument'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_view/render/partials.rb:219:in `render'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_view/render/partials.rb:332:in `_render_partial'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_view/render/rendering.rb:30:in `render'
+  /Users/tjk/Desktop/codesaurus/app/views/features/index.html.erb:5:in `block in _render_template_28347616321838123_2164011820_1736400037844212491'
+  /Users/tjk/Desktop/codesaurus/app/views/features/index.html.erb:4:in `each'
+  /Users/tjk/Desktop/codesaurus/app/views/features/index.html.erb:4:in `_render_template_28347616321838123_2164011820_1736400037844212491'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_view/template.rb:134:in `block in render'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/notifications.rb:48:in `instrument'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_view/template.rb:126:in `render'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_view/render/rendering.rb:58:in `block in _render_template'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/notifications.rb:48:in `instrument'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_view/render/rendering.rb:55:in `_render_template'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_view/render/rendering.rb:25:in `render'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:114:in `_render_template'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:92:in `render'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rendering.rb:17:in `render'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:39:in `block (2 levels) in render'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:39:in `block in render'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:77:in `cleanup_view_runtime'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activerecord-3.0.0.beta4/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:38:in `render'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/abstract_controller/base.rb:145:in `process_action'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rendering.rb:11:in `process_action'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:443:in `_run__2257037540961299539__process_action__3540169503571379414__callbacks'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:408:in `_run_process_action_callbacks'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:88:in `run_callbacks'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/abstract_controller/callbacks.rb:17:in `process_action'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:29:in `block in process_action'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/notifications.rb:48:in `instrument'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:28:in `process_action'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rescue.rb:8:in `process_action'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/abstract_controller/base.rb:114:in `process'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:40:in `process'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal.rb:126:in `dispatch'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_controller/metal.rb:166:in `block in action'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:27:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:27:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-mount-0.6.12/lib/rack/mount/route_set.rb:148:in `block in call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-mount-0.6.12/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-mount-0.6.12/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-mount-0.6.12/lib/rack/mount/code_generation.rb:92:in `recognize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-mount-0.6.12/lib/rack/mount/route_set.rb:139:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:457:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/head.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/flash.rb:177:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/session/abstract_store.rb:106:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/cookies.rb:235:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:31:in `block in call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:11:in `cache'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_pool.rb:365:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:414:in `_run_call_callbacks'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:88:in `run_callbacks'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/sendfile.rb:105:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:48:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.4ms)
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-25 00:14:00 -0700
+  Processing by FeaturesController#index as HTML
+  [1m[36mFeature Load (0.4ms)[0m  [1mSELECT `features`.* FROM `features`[0m
+  [1m[35mLanguage Load (1.2ms)[0m  SELECT `languages`.* FROM `languages` WHERE (`languages`.`id` = 4) LIMIT 1
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _render_template_441893632574534093_2152914260_1480196531949173473 at /Users/tjk/Desktop/codesaurus/app/views/features/_feature.html.erb:3)
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `versions` WHERE (`versions`.item_id = 1 AND `versions`.item_type = 'Feature')[0m
+Rendered features/_feature.html.erb (82.9ms)
+  [1m[35mLanguage Load (0.2ms)[0m  SELECT `languages`.* FROM `languages` WHERE (`languages`.`id` = 3) LIMIT 1
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _render_template_441893632574534093_2194470280_1480196531949173473 at /Users/tjk/Desktop/codesaurus/app/views/features/_feature.html.erb:3)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `versions` WHERE (`versions`.item_id = 2 AND `versions`.item_type = 'Feature')[0m
+Rendered features/_feature.html.erb (5.8ms)
+Rendered features/index.html.erb within layouts/application (159.2ms)
+Completed 200 OK in 175ms (Views: 160.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/javascripts/modernizer-1.5" for 127.0.0.1 at 2010-08-25 00:14:00 -0700
+
+ActionController::RoutingError (No route matches "/javascripts/modernizer-1.5"):
+/Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-25 00:14:59 -0700
+  Processing by FeaturesController#index as HTML
+  [1m[35mFeature Load (0.4ms)[0m  SELECT `features`.* FROM `features`
+  [1m[36mLanguage Load (1.7ms)[0m  [1mSELECT `languages`.* FROM `languages` WHERE (`languages`.`id` = 4) LIMIT 1[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _render_template_441893632574534093_2178364160_1480196531949173473 at /Users/tjk/Desktop/codesaurus/app/views/features/_feature.html.erb:3)
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) AS count_id FROM `versions` WHERE (`versions`.item_id = 1 AND `versions`.item_type = 'Feature')
+Rendered features/_feature.html.erb (35.3ms)
+  [1m[36mLanguage Load (0.2ms)[0m  [1mSELECT `languages`.* FROM `languages` WHERE (`languages`.`id` = 3) LIMIT 1[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _render_template_441893632574534093_2177999120_1480196531949173473 at /Users/tjk/Desktop/codesaurus/app/views/features/_feature.html.erb:3)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM `versions` WHERE (`versions`.item_id = 2 AND `versions`.item_type = 'Feature')
+Rendered features/_feature.html.erb (5.1ms)
+Rendered features/index.html.erb within layouts/application (115.2ms)
+Completed 200 OK in 131ms (Views: 115.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/javascripts/modernizer-1.5" for 127.0.0.1 at 2010-08-25 00:14:59 -0700
+
+ActionController::RoutingError (No route matches "/javascripts/modernizer-1.5"):
+/Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-25 00:15:30 -0700
+  Processing by FeaturesController#index as HTML
+  [1m[36mFeature Load (0.4ms)[0m  [1mSELECT `features`.* FROM `features`[0m
+  [1m[35mLanguage Load (1.8ms)[0m  SELECT `languages`.* FROM `languages` WHERE (`languages`.`id` = 4) LIMIT 1
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _render_template_441893632574534093_2155656040_1480196531949173473 at /Users/tjk/Desktop/codesaurus/app/views/features/_feature.html.erb:3)
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `versions` WHERE (`versions`.item_id = 1 AND `versions`.item_type = 'Feature')[0m
+Rendered features/_feature.html.erb (34.2ms)
+  [1m[35mLanguage Load (0.2ms)[0m  SELECT `languages`.* FROM `languages` WHERE (`languages`.`id` = 3) LIMIT 1
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _render_template_441893632574534093_2155213760_1480196531949173473 at /Users/tjk/Desktop/codesaurus/app/views/features/_feature.html.erb:3)
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) AS count_id FROM `versions` WHERE (`versions`.item_id = 2 AND `versions`.item_type = 'Feature')[0m
+Rendered features/_feature.html.erb (5.7ms)
+Rendered features/index.html.erb within layouts/application (106.9ms)
+Completed 200 OK in 123ms (Views: 107.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/javascripts/modernizer-1.5" for 127.0.0.1 at 2010-08-25 00:15:31 -0700
+
+ActionController::RoutingError (No route matches "/javascripts/modernizer-1.5"):
+/Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
