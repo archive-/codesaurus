@@ -4490,3 +4490,187 @@ ActionController::RoutingError (No route matches "/javascripts/modernizer-1.5"):
   /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
 
 Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-24 20:27:28 -0700
+  Processing by FeaturesController#index as HTML
+  [1m[36mFeature Load (0.3ms)[0m  [1mSELECT `features`.* FROM `features`[0m
+Rendered features/_feature.html.erb (1.9ms)
+Rendered features/index.html.erb within layouts/application (73.5ms)
+Completed 200 OK in 86ms (Views: 76.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/javascripts/modernizer-1.5" for 127.0.0.1 at 2010-08-24 20:27:28 -0700
+
+ActionController::RoutingError (No route matches "/javascripts/modernizer-1.5"):
+/Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-24 20:27:29 -0700
+  Processing by FeaturesController#index as HTML
+  [1m[35mFeature Load (0.3ms)[0m  SELECT `features`.* FROM `features`
+Rendered features/_feature.html.erb (1.8ms)
+Rendered features/index.html.erb within layouts/application (70.4ms)
+Completed 200 OK in 84ms (Views: 73.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/javascripts/modernizer-1.5" for 127.0.0.1 at 2010-08-24 20:27:29 -0700
+
+ActionController::RoutingError (No route matches "/javascripts/modernizer-1.5"):
+/Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/features/new" for 127.0.0.1 at 2010-08-24 20:27:31 -0700
+  Processing by FeaturesController#new as HTML
+Rendered features/_form.html.erb (12.0ms)
+Rendered features/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 85ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/modernizer-1.5" for 127.0.0.1 at 2010-08-24 20:27:31 -0700
+
+ActionController::RoutingError (No route matches "/javascripts/modernizer-1.5"):
+/Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/features/new" for 127.0.0.1 at 2010-08-24 20:28:11 -0700
+  Processing by FeaturesController#new as HTML
+Rendered features/_form.html.erb (60.7ms)
+Rendered features/new.html.erb within layouts/application (63.9ms)
+Completed 200 OK in 134ms (Views: 66.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/modernizer-1.5" for 127.0.0.1 at 2010-08-24 20:28:11 -0700
+
+ActionController::RoutingError (No route matches "/javascripts/modernizer-1.5"):
+/Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-24 20:28:12 -0700
+  Processing by FeaturesController#index as HTML
+  [1m[36mFeature Load (0.3ms)[0m  [1mSELECT `features`.* FROM `features`[0m
+Rendered features/_feature.html.erb (1.9ms)
+Rendered features/index.html.erb within layouts/application (76.6ms)
+Completed 200 OK in 90ms (Views: 79.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/javascripts/modernizer-1.5" for 127.0.0.1 at 2010-08-24 20:28:12 -0700
+
+ActionController::RoutingError (No route matches "/javascripts/modernizer-1.5"):
+/Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/features/1" for 127.0.0.1 at 2010-08-24 20:28:14 -0700
+  Processing by FeaturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mFeature Load (0.4ms)[0m  SELECT `features`.* FROM `features` WHERE (`features`.`id` = 1) LIMIT 1
+Rendered features/show.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 93ms (Views: 28.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/javascripts/modernizer-1.5" for 127.0.0.1 at 2010-08-24 20:28:14 -0700
+
+ActionController::RoutingError (No route matches "/javascripts/modernizer-1.5"):
+/Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/tjk/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/tjk/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
