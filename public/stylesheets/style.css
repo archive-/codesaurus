@@ -2,9 +2,11 @@ body {font-family: 'arial'; margin: 0 auto; width: 720px;}
 label {display: block;}
 .not-block {display: inline;}
 textarea {height: 100px;}
-#new_feature input[type="submit"] {display: block; margin-top: 10px;}
+#new_feature {width: 400px; margin: 0 auto;}
+#new_feature input[type="submit"] {display: block; margin-top: 10px}
 /* thanks: http://labnol.blogspot.com/2006/10/html-css-trick-for-displaying-code.html */
 pre {white-space: pre-wrap; white-space: -moz-pre-wrap !important; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;}
 .feature-info {font-family: 'arial'; font-size: 14px; line-height: 1.2;}
 #q {width: 200px;}
 .inline {display: inline;}
+#footer {margin: 70px 0 20px; text-align: right; border-top: 1px solid #AAA;}

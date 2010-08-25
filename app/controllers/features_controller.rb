@@ -10,7 +10,7 @@ class FeaturesController < ApplicationController
       redirect_to @feature
     else
       flash[:error] = 'There was a problem creating the feature.'
-      render :action => 'new'
+      render action: 'new'
     end
   end
 
@@ -37,7 +37,7 @@ class FeaturesController < ApplicationController
         redirect_to @feature
       else
         flash[:error] = 'There was a problem updating the feature.'
-        render :action => 'edit'
+        render action: 'edit'
       end
   end
 
