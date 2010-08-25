@@ -5,6 +5,6 @@ class ApplicationController < ActionController::Base
   protected
   
   def current_user
-    request.env['REMOTE_ADDR'].gsub!(/([0-9]+).([0-9]+).([0-9]+).([0-9]+)/, 'xxx.xxx.\3.\4')
+    request.env['REMOTE_ADDR']
   end
 end
