@@ -5,7 +5,6 @@ class FeaturesController < ApplicationController
 
   def create
     @feature = Feature.new(params[:feature])
-    @feature.lid = 0 # change this
     if @feature.save
       flash[:notice] = 'Feature successfully saved.'
       redirect_to @feature

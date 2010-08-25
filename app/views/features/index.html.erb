@@ -4,6 +4,8 @@
 <% @features.each do |feature| %>
 	<%= render feature %>
 <% end %>
-<% else %>
+<% elsif !params[:q].blank? %>
 	<p>No <strong>feature names</strong> found with search query of '<%= params[:q] %>'.</p>
+<% else %>
+	<p>There are currently no features. This is a sad moment. Please <%= link_to 'create some', new_feature_path %>. ;)</p>
 <% end %>

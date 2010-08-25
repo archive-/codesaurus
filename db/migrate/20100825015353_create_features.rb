@@ -2,7 +2,7 @@ class CreateFeatures < ActiveRecord::Migration
   def self.up
     create_table :features do |t|
       t.string :name, :null => false
-      t.integer :lid, :null => false
+      t.integer :language_id, :null => false
       t.text :snippet, :null => false, :default => ''
       t.text :info, :null => false, :default => ''
       t.string :url

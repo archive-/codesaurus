@@ -1,5 +1,5 @@
 <div class="feature">
-	<h2><%= @feature.name %> (<%= link_to 'edit', edit_feature_path(@feature) %>, <%= link_to '<< back', features_path %>)</h2>
+	<h2><b>[<%= @feature.language.name %>]</b> <%= @feature.name %> (<%= link_to 'edit', edit_feature_path(@feature) %>, <%= link_to '<< back', features_path %>)</h2>
 	<pre class="feature-info"><%= @feature.info %></pre>
 	<pre class="feature-snippet prettyprint linenums"><%= @feature.snippet %></pre>
 	<p><%= link_to @feature.url, @feature.url %></p>
