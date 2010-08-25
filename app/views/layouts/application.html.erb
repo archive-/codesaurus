@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
 <head>
-  <title>Codesaurus</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Codesaurus</title>
+	<%= stylesheet_link_tag 'style' %>
+	<%= javascript_include_tag 'modernizer-1.5' %>
+	<%= csrf_meta_tag %>
 </head>
 <body>
 
-<%= yield %>
+	<header id="header">
+		<h1><%= link_to 'Codesaurus', :root %> <span>alpha</span></h1>
+	</header>
 
+	<section id="main" role="main">
+	<%= yield %>
+	</section>
+
+
+	<%= javascript_include_tag :defaults %>
 </body>
 </html>

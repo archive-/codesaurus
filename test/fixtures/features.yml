@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  lid: 1
+  snippet: MyText
+  info: MyText
+  uri: MyString
+  fv: MyString
+  tv: MyString
+  deprecated: false
+
+two:
+  name: MyString
+  lid: 1
+  snippet: MyText
+  info: MyText
+  uri: MyString
+  fv: MyString
+  tv: MyString
+  deprecated: false

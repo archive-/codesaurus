@@ -1,0 +1,4 @@
+label {display: block;}
+.not-block {display: inline;}
+textarea {height: 100px;}
+input[type="submit"] {display: block; margin-top: 10px;}

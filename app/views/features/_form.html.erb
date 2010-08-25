@@ -1,0 +1,21 @@
+<%= form_for feature do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+	
+	<%# f.label :language %>
+	<%# f.text_field :language %>
+	
+	<%= f.label :info %>
+	<%= f.text_area :info %>
+	
+	<%= f.label :snippet, 'Example usage' %>
+	<%= f.text_area :snippet %>
+	
+	<%= f.label :url, 'External reference URL' %>
+	<%= f.text_field :url %>
+	
+	<%= f.check_box :deprecated %>
+	<%= f.label :deprecated, 'Deprecated', {:class => 'not-block'} %>
+	
+	<%= f.submit %>
+<% end %>
